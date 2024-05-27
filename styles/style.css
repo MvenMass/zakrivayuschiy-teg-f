@@ -23,7 +23,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-fonts), sans-serif;
-  font-variation-settings: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight, 400);
   background-color: var(--bg-color);
   color: var(--accent-color);
   background-image: var(--bg-gradient);
@@ -400,5 +400,5 @@ button {
 }
 
 .filter-len {
-  filter: blur(6px);
+  filter: grayscale(0.2) blur(2px)
 }
