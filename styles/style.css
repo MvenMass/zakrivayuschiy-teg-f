@@ -71,7 +71,7 @@
   padding-inline-start: 30px;
 }
 
-button{
+button {
   font-family: inherit;
   font-weight: var(--text-weight);
   border: none;
@@ -234,18 +234,14 @@ button{
 
 .btn:focus {
   outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
+  transition: 0.3s ease;
 }
 
 .btn:focus .btn-animation {
   box-shadow: 2px 2px 0 var(--accent-color);
   transition: 0.3s ease;
 }
-
-.btn:focus {
-  box-shadow: 2px 2px 0 var(--accent-color);
-  transition: 0.3s ease;
-}
-
 
 .btn-animation::before {
   content: "";
@@ -259,11 +255,11 @@ button{
   transition: width 0.5s ease-in-out;
 }
 
-.btn-animation:hover { 
+.btn-animation:hover {
   color: var(--bg-color);
 }
 
-.btn-animation{
+.btn-animation {
   z-index: 1;
   transition: color 0.5s ease-in-out ;
 }
