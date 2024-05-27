@@ -24,7 +24,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-fonts), sans-serif;
   font-variation-settings: "wght" var(--text-weight, 400);
-  background-color: var(--bg-color);
+  background-color: var(--bg-color), #fff;
   color: var(--accent-color);
   background-image: var(--bg-gradient);
   background-size: cover;
@@ -32,7 +32,6 @@
 }
 
 .content-size {
-  /* inline-size: calc((100% - 50%) - 20px); */
   inline-size: clamp(400px, 50%, calc((100% - 50%) - 20px));
 }
 
@@ -86,6 +85,7 @@ button {
 
 .section-subtitle {
   padding: 3px 10px;
+  font-variation-settings: "wght" var(--title-weight, 700);
 }
 
 .section-img {
