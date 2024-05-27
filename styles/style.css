@@ -174,6 +174,13 @@ button {
   align-items: center;
 }
 
+@media (width <= 400px) {
+  .footer__button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .footer__button-svg {
   inline-size: 28px;
   block-size: 28px;
@@ -342,15 +349,18 @@ button {
 }
 
 .dialog {
+  outline: 2px solid var(--accent-color);
+  min-inline-size: 393px;
   background-color: var(--bg-color);
   color: var(--accent-color);
   font-family: var(--accent-fonts);
   padding: 40px;
+  text-transform: uppercase;
 }
 
 .dialog__section {
   display: flex;
-  gap: 12px;
+  gap: 28px;
   max-inline-size: 351px;
   margin-block-end: 30px;
 }
@@ -358,7 +368,7 @@ button {
 .dialog__section-text {
   line-height: 21px;
   font-size: 14px;
-  padding-inline-end: 10px;
+  padding-inline-end: 55px;
 }
 
 .dialog::backdrop {
