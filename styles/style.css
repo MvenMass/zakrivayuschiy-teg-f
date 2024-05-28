@@ -67,10 +67,12 @@
   border: 2px solid var(--accent-color);
 }
 
-@media (width <= 400px){
+@media (width <= 400px) {
+  
   .page { 
     max-inline-size: 100vw; 
   }
+
   .header {
     margin-block-start: 0;
     padding-block-start: 89px;
