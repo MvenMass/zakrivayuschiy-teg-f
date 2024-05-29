@@ -17,6 +17,7 @@
     --laybel-text: #fff;
     --contour-like: #000;
     --filling-like: #FF0000;
+    --button-text-color: #fff;
   }
   
   @media (prefers-color-scheme: light) {
@@ -35,6 +36,7 @@
         --laybel-text: #fff;
         --contour-like: #000;
         --filling-like: #FF0000;
+        --button-text-color: #fff;
     }
   }
   
@@ -52,6 +54,7 @@
     --laybel-text: #000;
     --contour-like: #00CC14;
     --filling-like: #FF0000;
+    --button-text-color: #00CC14;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -68,6 +71,7 @@
         --laybel-text: #000;
         --contour-like: #00CC14;
         --filling-like: #FF0000;
+        --button-text-color: #00CC14;
     }
   }
   
