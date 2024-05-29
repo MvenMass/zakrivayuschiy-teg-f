@@ -19,7 +19,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-fonts), "Inter", sans-serif;
@@ -58,11 +57,9 @@
   flex-direction: column;
   gap: 1.13rem;
   padding: 137px clamp(14px, 5%, 120px) 25px; 
-  /* 137px */
   font-family: var(--accent-fonts), 'fantasy';
   background-color: var(--bg-color);
-  margin-block-end: 46px;
-  /* margin-block-end: 46px; */
+  margin-block-end: 95px;
   margin-block-start: 100px;
   border: 2px solid var(--accent-color);
 }
@@ -115,6 +112,8 @@ button {
 
 .section-img {
   position: relative;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .section-img-text {
@@ -154,7 +153,7 @@ button {
 .section__content-block {
   display: flex;
   gap: 27px;
-  padding: 30px 25px 25px;
+  padding: 25px;
   flex-direction: column;
   font-size: 18px;
 }
@@ -167,13 +166,13 @@ button {
     padding: 8px 10px;
   }
   .section__content-block {
-    padding: 26px 25px 25px;
+    padding: 21px 25px 25px;
   }
 } 
 
 .section__button {
   display: flex;
-  padding: 0px 25px 25px 0px;
+  padding: 0 25px 27px 0;
   justify-content: end;
   align-items: flex-start;
   gap: 4px;
@@ -183,7 +182,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 10px;
   position: relative;
   vertical-align: baseline;
   cursor: pointer;
@@ -221,18 +220,26 @@ button {
 .footer {
   display: flex;
   justify-content: center;
-  /* margin-block-end: 100px; */
+  margin-block-end: 100px;
 }
 
 .footer__button {
   position: relative;
   border: 2px solid var(--accent-color);
-  padding: 17px 18px;
+  padding: 12px 18px;
   align-items: center;
 }
 
 .footer__floppy-svg {
-  width: 27px;
+  fill: currentColor;
+  inline-size: 21px;
+}
+
+@supports (mix-blend-mode: difference) {
+  .footer__floppy-svg {
+     fill: var(--button-text-color);
+     mix-blend-mode: difference;
+  }
 }
 
 @media (width <= 400px) {
@@ -243,7 +250,7 @@ button {
 
   }
   .footer__floppy-svg {
-    width: 37px;
+    inline-size: 28px;
   }
 }
 
@@ -360,9 +367,15 @@ button {
   background-color: var(--bg-color);
   color: var(--accent-color);
   font-family: var(--accent-fonts), 'fantasy';
-  padding: 40px;
+  padding: 30px;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
+}
+
+@media (width <= 375px) {
+  .dialog[open] {
+      inline-size: 341px;
+  }
 }
 
 .dialog__section {
@@ -406,6 +419,7 @@ button {
 .floppy-svg {
   display: block;
   inline-size: 40px;
+  fill: currentColor;
 }
 
  .filter-rotate {
